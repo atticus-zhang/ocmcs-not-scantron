@@ -27,7 +27,7 @@ Then make sure that you are using the virtual environment that we have set up by
 Before running the `not_scantron.ipynb`, make sure that the answer key is up to date by running `update_mark_scheme.py`. It will ask you to enter as a column, just... put the answers in a column in Google Sheet or MS Excel, and then copy paste into the terminal. Saves you a lot of troubles. If your answer key was in one row uhhh... tough luck, go learn how to use Excel or smth.
 
 Just kidding, here's what you need to do:
->If all of your answers are in a row, so if it looks like `ABCDEFG...`, copy paste it into the `A1` cell, then type this into the `B1` cell `=MID($A$1, ROW(A1), 1)` and then drag it down until you reach an empty cell. Will this work? Who knows. Good luck!!!
+>If all of your answers are in a row, so if it looks like `ABCDEFG...`, copy paste it into the `A1` cell, then type this into the `B1` cell `=MID($A$1, ROW(A1), 1)` and then drag it down until you reach an empty cell. Will this work? Who knows. Good luck!!!  
 \- Love, ChatGPT ;)
 
 If you need to update the mark scheme, i.e. how many marks a correct, incorrect, or blank question is worth. (idk why you would ever do that, I thought we had an agreement going T-T) Delete the `mark_scheme.json` file in `./config`, change the `DEFAULT_CORRECT`, `DEFAULT_NONE`, and `DEFAULT_INCORRECT`, and run the code like you're just updating the answer key.
@@ -41,6 +41,6 @@ sm_id,scan failed,,,,,,,,,,,,,,,,,,,,,,,,,,
 just means that the contestant probably coloured some bubble really poorly, or the proctor is being a dummy and can't take a proper scan of the bubble sheet. Oh well, go mark those sheets by hand like your forebears. You might even find the ancient grading tools they once used hidden in some behind a waterfall in the OCMC Google Drive (if that still exists). Have fun, and good luck releasing the results to the students in a few days!
 
 ## Acknowledgment
-Big thanks to Vishal Turkar ([Vishal1999-33](https://github.com/Vishal1999-33) on GitHub), I stole a bunch of code from his bubble sheet scanner project. Couldn't have done it without you man, although I think it helps on a poorly lit photo if you apply Otsu's thresholding method *before* detecting the edge contour. This made edge detection more reliable in my experience of copying from you :)
-I stole some code from someone else, so feel free to steal from me if you can read my messy code ¯\\\_(ツ)\_/¯
+Big thanks to Vishal Turkar ([Vishal1999-33](https://github.com/Vishal1999-33) on GitHub), I stole a bunch of code from his bubble sheet scanner project. Couldn't have done it without you man, although I think it helps on a poorly lit photo if you apply Otsu's thresholding method *before* detecting the edge contour. This made edge detection more reliable in my experience of copying from you :)  
+I stole some code from someone else, so feel free to steal from me if you can read my messy code ¯\\\_(ツ)\_/¯  
 Byeeeeee (\^o\^)/\~\~\~
