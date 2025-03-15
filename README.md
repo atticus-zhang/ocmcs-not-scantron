@@ -1,6 +1,6 @@
 # OCMC's Not Scantron 1.0
 ## Description
-This script uses OpenCV to automatically pick up page contour, detect contestant input, and outputs their mark and tiebreaker score in a convenient `.csv` format. Hand marking bubblesheets is now officially a thing of the past woohoo!!!
+This script uses OpenCV to automatically pick up page contour, detect contestant input, and outputs their mark and tiebreaker score in a convenient `.csv` format. Hand marking bubblesheets is now officially a thing of the past woohoo!!! At least... for properly scanned returns. Just get the proctors to scan it plz :)
 
 ## Library Dependencies
 This script uses the following external libraries:
