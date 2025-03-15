@@ -20,7 +20,8 @@ python 3 -m venv venv
 source venv/bin/activate
 pip install imutils pdf2image dynamsoft-barcode-reader opencv-python
 ```
-Then make sure that you are using the virtual environment that we have set up by using the shortcut `Ctrl + Shift + P` (Windows) or `Cmd + Shift + P` (MacOS) to open Command Palette. Then select `Python: Select Interpreter` and then something like `Python 3.13.2 ('venv')` (your python might have a different version, so just look for the `('venv')` at the end) and you are good to go.
+Then make sure that you are using the virtual environment that we have set up by using the shortcut `Ctrl + Shift + P` (Windows) or `Cmd + Shift + P` (MacOS) to open Command Palette. Then select `Python: Select Interpreter` and then something like `Python 3.13.2 ('venv')` (your python might have a different version, so just look for the `('venv')` at the end) and you are good to go.  
+In case this doesn't work, click `Select Kernal` when you have opened the `not_scantron.ipynb` file, and click select `Select a Kernel` and click whichever option that looks like `Python 3.13.2 ('venv')`.
 
 ## Usage
 ### Mark Scheme Setup
@@ -38,7 +39,7 @@ Read the log if you're interested, if not, just to go the `./fileOut/` folder at
 ```
 sm_id,scan failed,,,,,,,,,,,,,,,,,,,,,,,,,,
 ```
-just means that the contestant probably coloured some bubble really poorly, or the proctor is being a dummy and can't take a proper scan of the bubble sheet. Oh well, go mark those sheets by hand like your forebears. You might even find the ancient grading tools they once used hidden in some behind a waterfall in the OCMC Google Drive (if that still exists). Have fun, and good luck releasing the results to the students in a few days!
+just means that the contestant probably coloured some bubble really poorly, or the proctor is being a dummy and can't take a proper scan of the bubble sheet. Oh well, go mark those sheets by hand like your forebears. You can find all the filed scans as `.jpg`s in the `./outFile/` folder, all named by the contestant ID. You might even find the ancient grading tools they once used hidden in some behind a waterfall in the OCMC Google Drive (if that still exists). Have fun, and good luck releasing the results to the students in a few days!
 
 ## Acknowledgment
 Big thanks to Vishal Turkar ([Vishal1999-33](https://github.com/Vishal1999-33) on GitHub), I stole a bunch of code from his bubble sheet scanner project. Couldn't have done it without you man, although I think it helps on a poorly lit photo if you apply Otsu's thresholding method *before* detecting the edge contour. This made edge detection more reliable in my experience of copying from you :)  
