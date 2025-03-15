@@ -1,0 +1,12 @@
+{
+    "config" : {
+        "multithread_count" : 8,
+        "in_folder" : "./fileIn/",
+        "out_folder" : "./fileOut/",
+        "out_file" : "result.csv",
+        "log_file" : "run_log.csv",
+        "mark_scheme" : "./config/mark_scheme.json",
+        "dpi" : 150,
+        "questions" : 25
+    }
+}
